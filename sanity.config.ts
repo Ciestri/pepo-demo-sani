@@ -17,7 +17,14 @@ export default defineConfig({
 
   plugins: [
     presentationTool({
-      previewUrl: 'http://localhost:3000',
+     // previewUrl: {
+     //   origin: typeof location === 'undefined' ? '<http://localhost:3000>' : location.origin,
+        //draftMode: {
+         // enable: '/api/draft',
+    //    },
+     // previewUrl: 'http://localhost:3000',
+     previewUrl: 'https://demo-pepo-remi.onrender.com',
+
       locate
     }),
     structureTool(),
